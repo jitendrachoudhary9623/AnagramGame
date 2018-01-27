@@ -2,6 +2,16 @@ This game was developed on the starter code provided for the Anagrams workshop.
 This workshop was part of the Applied CS with Android course: 
 held in MESCOE,pune on 27-01-2018 by the Google facilitator Ms.Jyoti Chabaria
 
+Presently the app is provide functionality 
+to user to play in 3 modes
+1.Simple Mode : Anagarams Of Same Length
+2.Intermediate Mode :Anagarams with one extra letter
+3.Hard Mode :Anagarams with two extra letters
+
+Hoping to add following featues
+1.Improve GUI
+2.More Complexity
+3.Updating Scoreboard(i.e Calculating Score and HighScore)
 
 http://g.co/cswithandroid
 
