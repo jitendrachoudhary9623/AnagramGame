@@ -1,6 +1,25 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools" tools:context=".AnagramsActivity">
-    <item android:id="@+id/action_settings" android:title="@string/action_settings"
-        android:orderInCategory="100" app:showAsAction="never" />
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".AnagramsActivity">
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="1"
+        android:title="@string/action_settings"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/SimpleAnagram"
+        android:orderInCategory="2"
+        android:title="Basic Anagrams"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/AnagramWithOne"
+        android:orderInCategory="3"
+        android:title="Anagrams with 1 Extra Letter"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/AnagramWithTwo"
+        android:orderInCategory="4"
+        android:title="Anagrams with 2 Extra Lettes"
+        app:showAsAction="never" />
 </menu>

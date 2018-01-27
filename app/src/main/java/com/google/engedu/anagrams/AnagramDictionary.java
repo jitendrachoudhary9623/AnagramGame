@@ -139,15 +139,46 @@ public class AnagramDictionary {
         return result;
     }
 
+    //Done With Two
+    public List<String> getAnagramsWithTwoMoreLetters(String word)
+    {
+        ArrayList<String> result = new ArrayList<String>();
+        ArrayList<String> resultant;
+        for(char Firstalphabet = 'a'; Firstalphabet <= 'z';Firstalphabet++) {
+            StringBuilder newWord = new StringBuilder();
+            newWord.append(word).append(Firstalphabet);
+
+            for(char SecondAlphabet = 'a'; SecondAlphabet <= 'z';SecondAlphabet++) {
+                StringBuilder addLetter=new StringBuilder();
+                addLetter.append(newWord).append(SecondAlphabet);
+                String extendedKey = SortLetters(addLetter.toString());
+                if(lettersWord.containsKey(extendedKey) ){
+                    resultant = new ArrayList<>();
+                    resultant = (ArrayList) lettersWord.get(extendedKey);
+                    for(int i = 0;i< resultant.size();i++)
+                        result.add(String.valueOf(resultant.get(i)));
+
+
+                }
+            }
+
+        }
+
+        return result;
+    }
+
+
+
     public String pickGoodStarterWord() {
         int x = MIN_NUM_ANAGRAMS+new Random().nextInt(wordList.size());
         String Word=wordList.get(x);
         if(Word.length()<=MAX_WORD_LENGTH)
         return wordList.get(x);
-        else {
+       else {
            return pickGoodStarterWord();
+      }
 
-        }
-
+      //TODO(1) For Testing Comment out above code and uncomment return Tax
+           // return "tax";
     }
 }
